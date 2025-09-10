@@ -1,0 +1,17 @@
+* 카드 그림자 강화 & 둥글게 */
+.page__content .archive__item,
+.feature__wrapper .archive__item {
+  box-shadow: 0 10px 22px rgba(0,0,0,.06);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* 링크 hover 컬러 */
+a:hover {
+  opacity: .9;
+}
+
+/* 목차(TOC) 고정 폭 조정 */
+.toc {
+  max-width: 260px;
+}
