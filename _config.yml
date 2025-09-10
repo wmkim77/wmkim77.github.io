@@ -48,3 +48,8 @@ author:
   name: "김우"
   avatar: # 원하면 이미지 URL
   bio: "CISA · 보안 TF 리딩 · ISMS-P/NAC/DLP/AWS 보안"
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
