@@ -1,0 +1,20 @@
+feature_row:
+  quick:
+    - image_path: https://via.placeholder.com/400x200
+      title: "ISMS-P 준비"
+      excerpt: "프레임워크/증적 설계 · 갭분석 · 운영 팁"
+      url: "/categories/ISMS/"
+      btn_label: "보기"
+      btn_class: "btn--primary"
+    - image_path: https://via.placeholder.com/400x200
+      title: "NAC/DLP 운영"
+      excerpt: "현장 체크리스트 · 예외/승인 프로세스"
+      url: "/categories/NAC/"
+      btn_label: "보기"
+      btn_class: "btn--primary"
+    - image_path: https://via.placeholder.com/400x200
+      title: "AWS 보안 로그"
+      excerpt: "ALB/WAF/CloudTrail 분석 쿼리 모음"
+      url: "/categories/AWS/"
+      btn_label: "보기"
+      btn_class: "btn--primary"
