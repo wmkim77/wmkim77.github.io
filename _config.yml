@@ -1,8 +1,26 @@
 title: "김우 · 보안 기술 블로그"
 description: "ISMS-P, NAC/DLP, AWS 보안, 로그분석, 운영 사례 아카이브"
 url: "https://wmkim77.github.io"
-theme: jekyll-theme-primer
+baseurl: "" # 이 줄을 추가하세요 (비워두기)
+
+# Theme 설정
+remote_theme: pages-themes/primer@v0.6.0 # GitHub Pages에서 지원하는 방식
+# 또는
+# theme: jekyll-theme-primer
+
+# Build settings
 markdown: kramdown
 timezone: Asia/Seoul
-plugins: []
-# For collections or nav later, you can expand here.
+
+# Plugins (GitHub Pages에서 지원하는 플러그인들)
+plugins:
+  - jekyll-default-layout
+  - jekyll-github-metadata
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-relative-links
+
+# GitHub Pages 호환성
+github: [metadata]
+encoding: UTF-8
