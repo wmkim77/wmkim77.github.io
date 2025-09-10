@@ -1,0 +1,8 @@
+title: "김우 · 보안 기술 블로그"
+description: "ISMS-P, NAC/DLP, AWS 보안, 로그분석, 운영 사례 아카이브"
+url: "https://<your-username>.github.io"
+theme: jekyll-theme-primer
+markdown: kramdown
+timezone: Asia/Seoul
+plugins: []
+# For collections or nav later, you can expand here.
