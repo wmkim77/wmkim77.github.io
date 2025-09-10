@@ -1,11 +1,13 @@
 title: "김우 · 보안 기술 블로그"
 description: "ISMS-P, NAC/DLP, AWS 보안, 로그분석, 운영 사례 아카이브"
 url: "https://wmkim77.github.io"
-
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 timezone: Asia/Seoul
 
-# MM 권장 플러그인
+# 테마(원격)
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+minimal_mistakes_skin: air   # 스킨: air | dark | mint | neon | contrast | splash 등
+
+# 플러그인
 plugins:
   - jekyll-include-cache
   - jekyll-paginate
@@ -13,10 +15,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
-paginate: 5
+# 검색/페이지네이션
+search: true
+search_full_content: true
+paginate: 6
 paginate_path: "/page:num/"
 
-# 글 기본 옵션(TOC 켜고, 사이드에 작성자/네비)
+# 글 기본값(사이드 프로필 + TOC)
 defaults:
   - scope:
       path: ""
@@ -27,13 +32,10 @@ defaults:
       read_time: true
       toc: true
       toc_sticky: true
-      comments: false
 
 # 카테고리/태그 아카이브
 jekyll-archives:
-  enabled:
-    - categories
-    - tags
+  enabled: [categories, tags]
   layouts:
     category: archive
     tag: archive
@@ -41,8 +43,8 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-# 작성자 정보(사이드 프로필 카드)
+# 작성자 카드(사이드)
 author:
   name: "김우"
-  avatar: # 프로필 이미지 URL(선택)
+  avatar: # 원하면 이미지 URL
   bio: "CISA · 보안 TF 리딩 · ISMS-P/NAC/DLP/AWS 보안"
