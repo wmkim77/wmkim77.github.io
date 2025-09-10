@@ -1,16 +1,4 @@
 source "https://rubygems.org"
-
-gem "jekyll", "~> 4.3.0"
+gem "jekyll", "~> 4.3"
+# Choose a simple built-in theme (or replace with your favorite theme gem)
 gem "jekyll-theme-primer"
-
-group :jekyll_plugins do
-  gem "jekyll-default-layout"
-  gem "jekyll-github-metadata"
-  gem "jekyll-optional-front-matter"
-  gem "jekyll-readme-index"
-  gem "jekyll-titles-from-headings"
-  gem "jekyll-relative-links"
-end
-
-# GitHub Pages
-gem "github-pages", group: :jekyll_plugins
