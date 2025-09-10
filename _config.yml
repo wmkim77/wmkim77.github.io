@@ -2,7 +2,7 @@ title: "김우 · 보안 기술 블로그"
 description: "ISMS-P, NAC/DLP, AWS 보안, 로그분석, 운영 사례 아카이브"
 url: "https://wmkim77.github.io"
 
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 timezone: Asia/Seoul
 
 # MM 권장 플러그인
