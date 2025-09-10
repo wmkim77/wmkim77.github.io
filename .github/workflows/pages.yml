@@ -21,19 +21,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # 🔹 GitHub 공식 Jekyll 빌드 액션: 의존성 설치/캐시까지 알아서 처리
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Install dependencies
-        run: bundle install --path vendor/bundle
-
-      - name: Build site
-        run: bundle exec jekyll build --trace
-        env:
-          JEKYLL_ENV: production
+          source: ./
+          destination: ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -50,4 +46,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
